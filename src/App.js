@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Input from "./Components/Input/Input";
+import { ReactComponent as Github } from "./github-logo.svg";
+import "./App.css";
+import "antd/dist/antd.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="head">
+        <h1>Scraper</h1>
+      </div>
+      <Input />
+      <a href="https://github.com/ceosss/scraper" target="_blank">
+        <Github className="github" />
+      </a>
     </div>
   );
 }

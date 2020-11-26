@@ -1,0 +1,48 @@
+.input {
+    width: 50%;
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        input[type="text"] {
+            width: 400px;
+            padding-left: 10px;
+            border-radius: 10px;
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+        input[type="submit"] {
+            width: 425px;
+            margin: 20px;
+            height: 45px;
+            background-color: #2ecc71;
+            border: none;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+            transition: 400ms;
+            &:hover {
+                background-color: rgba(46, 204, 113, 0.8);
+            }
+            &:active,
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    .table {
+        margin: 30px auto 50px auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    @media screen and (max-width: 500px) {
+        width: 95%;
+        .table {
+            width: 95%;
+        }
+    }
+}
